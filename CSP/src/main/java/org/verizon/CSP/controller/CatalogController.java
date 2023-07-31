@@ -63,15 +63,10 @@ public class CatalogController {
 		catservice.deleteCatalogmodel(id);
 		
 	}
-	private CatalogRepo catalogrepo;
-    
-	@Autowired
-	public CatalogController(CatalogRepo catalogrepo)
-	{
-		this.catalogrepo=catalogrepo;
-	}
 	
-	@GetMapping("create")
+	
+	
+	/*@GetMapping("create")
 	public String create(Catalogmodel mod) {
 		return "index";
 	}
@@ -81,7 +76,7 @@ public class CatalogController {
 		this.catalogrepo.save(mod);
 		return "home.html";
 		
-	}
+	}*/
 	
 	
 }

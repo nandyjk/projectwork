@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Order Page</title>
+</head>
+<body>
+    <h1>Order Page</h1>
+    <form action="#" th:action="@{/submit-order}" method="post">
+        <label for="planId">Plan ID:</label>
+        <input type="text" id="planId" name="planId" required>
+        <br>
+        <label for="orderModel">Order Model:</label>
+        <input type="text" id="orderModel" name="orderModel" required>
+        <br>
+        <label for="orderName">Order Name:</label>
+        <input type="text" id="orderName" name="orderName" required>
+        <br>
+        <button type="submit">Add Order</button>
+    </form>
+</body>
+</html>

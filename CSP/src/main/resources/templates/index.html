@@ -1,31 +1,56 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOME PAGE</title>
-  <link rel="stylesheet" href="styles.css" crossorigin="anonymous">
+    <title>Navigation Page</title>
+    <style>
+		 body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color:black;
+        }
+	</style>
 </head>
-<body>
-  <nav>
-    <ul class="menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="container">
-    <h1>CATALOG</h1>
-    <form action="#" th:action="@{createuser}" th:object="${model}" method="post">
-      <label for="name">PLAN_NAME:</label>
-      <input type="text" id="name" name="name" required>
+<body style="background-color:antiquewhite">
+    <h1>Verizon Service Provider</h1>
+    <p style="color:red;">
+        Hello, and welcome to our telecom service provider app!
+        We are dedicated to providing you with the best services and plans to meet your communication needs.
+        Whether it's voice, data, or other telecom solutions, we've got you covered.
+        Feel free to explore our services and find the perfect plan that suits you.
+        Thank you for choosing us as your telecom service provider!
+    </p>
+    <div>
+        <h2>Catalog</h2>
+        <p>Click the link below to go to the Catalog page:</p>
+        <a href="catalog.html">Go to Catalog page</a>
+    </div>
 
-      <label for="price">PRICE:</label>
-      <input type="number" id="price" name="price" required>
+    <div>
+        <h2>Customer</h2>
+        <p>Click the link below to go to the Customer page:</p>
+        <a href="customer.html">Go to Customer</a>
+    </div>
 
-      <button type="submit">Register</button>
-    </form>
-  </div>
+    <div>
+        <h2>Enterprise Customer</h2>
+        <p>Click the link below to go to the Enterprise Customer page:</p>
+        <a href="enterprise_customer.html">Go to Enterprise Customer</a>
+    </div>
+
+    <div>
+        <h2>Order</h2>
+        <p>Click the link below to go to the Order page:</p>
+        <a href="order.html">Go to Order</a>
+    </div>
+
+    <div>
+        <h2>Service</h2>
+        <p>Click the link below to go to the Service page:</p>
+        <a href="service.html">Go to Service</a>
+    </div>
 </body>
 </html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Service Page</title>
+</head>
+<body>
+    <h1>Service Page</h1>
+    <form action="#" th:action="@{/submit-service}" method="post">
+        <label for="serviceId">Service ID:</label>
+        <input type="text" id="serviceId" name="serviceId" required>
+        <br>
+        <label for="provision">Provision:</label>
+        <input type="text" id="provision" name="provision" required>
+        <br>
+        <label for="activity">Activity:</label>
+        <input type="text" id="activity" name="activity" required>
+        <br>
+        <button type="submit">Add Service</button>
+    </form>
+</body>
+</html>
