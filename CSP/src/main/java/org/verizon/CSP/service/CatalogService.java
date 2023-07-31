@@ -4,10 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import org.verizon.CSP.model.Catalogmodel;
 import org.verizon.CSP.repo.CatalogRepo;
-
 
 
 
@@ -15,7 +13,7 @@ import org.verizon.CSP.repo.CatalogRepo;
 @Service
 public class CatalogService {
 
-	private final CatalogRepo catalogrepo;
+	private CatalogRepo catalogrepo;
 	
 	
 	@Autowired
@@ -23,14 +21,12 @@ public class CatalogService {
 
 		this.catalogrepo = catalogrepo;
 	}
-	
-		
+
 	public List<Catalogmodel> getAllCatalogmodel(){
 		return catalogrepo.findAll();
 	}
-	
-	public Catalogmodel createCatalogmodel(Catalogmodel catmodel) {
-		return catalogrepo.save(catmodel);
+		public Catalogmodel createCatalogmodel(Catalogmodel catmod) {
+		return catalogrepo.save(catmod);
 	}
 	
 	public Catalogmodel getCatalogmodelById (Integer plan_id) {
@@ -56,7 +52,6 @@ public class CatalogService {
 		catalogrepo.deleteById(id);
 	}
 	
-
-
 	
+
 }
